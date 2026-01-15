@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "548be89e-89c0-4fd7-baec-1feac0e92012",
+		"name": "News Aggregator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22892586",
+		"_collection_link": "https://dev-team-8248.postman.co/workspace/DevTinder~5389956b-c816-495e-82b0-8019ed1d394e/collection/22892586-548be89e-89c0-4fd7-baec-1feac0e92012?action=share&source=collection_link&creator=22892586"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Teset User\",\r\n    \"email\": \"testing@gmail.com\",\r\n    \"password\": \"TestUser@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
